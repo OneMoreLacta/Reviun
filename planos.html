@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - Reviun</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS Customizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap Icons (para os ícones de check) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#f59e0b',
+                            light: '#fbbf24',
+                            dark: '#d97706',
+                        },
+                        secondary: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- =============================================== -->
+        <!-- CABEÇALHO DA PÁGINA                             -->
+        <!-- =============================================== -->
+        <div class="py-5 text-center">
+            <a href="index.html" class="flex justify-center items-center space-x-2 mb-8">
+                <svg class="h-10 w-10 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+                <span class="text-3xl font-bold text-secondary">Reviun</span>
+            </a>
+            <div class="max-w-2xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-secondary leading-tight mb-4">
+                    Planos transparentes, sem surpresas.
+                </h1>
+                <p class="text-lg text-gray-600">
+                    Comece a transformar o feedback dos seus clientes em vendas. Cancele quando quiser.
+                </p>
+            </div>
+        </div>
+
+        <!-- =============================================== -->
+        <!-- CARDS DE PLANOS                                 -->
+        <!-- =============================================== -->
+        <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Plano Padrão -->
+            <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col border border-gray-200">
+                <h3 class="text-xl font-bold text-secondary">Padrão</h3>
+                <p class="mt-4 text-5xl font-extrabold text-secondary">R$70<span class="text-xl font-medium text-gray-500">/mês</span></p>
+                <p class="text-gray-500 mt-2">Ideal para começar a automatizar.</p>
+                <ul class="space-y-4 mt-8 flex-grow">
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-green-500 mr-3"></i>
+                        <span>Depoimentos ilimitados</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-green-500 mr-3"></i>
+                        <span>Widgets para seu site</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-green-500 mr-3"></i>
+                        <span>1.000 envios de e-mail/mês</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-green-500 mr-3"></i>
+                        <span>Automação de campanhas</span>
+                    </li>
+                </ul>
+                <a href="login.html" class="w-full mt-8 block text-center bg-primary-light text-primary-dark font-bold px-6 py-3 rounded-lg hover:bg-primary transition-colors hover:text-white">
+                    Começar com o Padrão
+                </a>
+            </div>
+
+            <!-- Plano Profissional -->
+            <div class="bg-secondary rounded-xl shadow-2xl p-8 flex flex-col ring-4 ring-primary">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-bold text-white">Profissional</h3>
+                    <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">POPULAR</span>
+                </div>
+                <p class="mt-4 text-5xl font-extrabold text-white">R$120<span class="text-xl font-medium text-gray-400">/mês</span></p>
+                <p class="text-gray-400 mt-2">Para negócios que querem mais poder.</p>
+                <ul class="space-y-4 mt-8 flex-grow text-gray-300">
+                    <li class="flex items-center font-semibold text-white">
+                        <i class="bi bi-check-circle-fill text-primary mr-3"></i>
+                        <span>Tudo do plano Padrão, e mais:</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-primary mr-3"></i>
+                        <span>Integração com WhatsApp</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-primary mr-3"></i>
+                        <span>Analytics avançado</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="bi bi-check-circle-fill text-primary mr-3"></i>
+                        <span>Suporte prioritário</span>
+                    </li>
+                </ul>
+                <a href="login.html" class="w-full mt-8 block text-center bg-primary text-white font-bold px-6 py-3 rounded-lg shadow-md hover:bg-primary-dark transition-all duration-300 btn-glow">
+                    Começar com o Profissional
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nosso JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

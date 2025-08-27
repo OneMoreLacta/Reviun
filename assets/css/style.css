@@ -1,0 +1,18 @@
+/*
+  Arquivo de Estilos Principal - Reviun
+  --------------------------------------
+  Aqui colocamos os estilos customizados que o Tailwind CSS não cobre,
+  ou pequenas classes auxiliares para manter nosso design consistente.
+*/
+
+/* Efeito de brilho sutil nos botões */
+.btn-glow:hover {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+}
+
+/* Foco customizado para os inputs para combinar com a nossa cor primária */
+.form-input:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+    outline: none;
+}
